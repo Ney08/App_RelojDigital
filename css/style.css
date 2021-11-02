@@ -1,0 +1,74 @@
+:root {
+    --font-princial: font-family: 'Bebas Neue', cursive;
+    --azul: #3374FF;
+    --naranja: #e07b39;
+    --verde: #75FF33;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.2rem;
+    font-family: var(--font-princial);
+    line-height: 1.5;
+    background-image: url("../image/large-triangles.svg");
+    background-size: cover;
+}
+h1 {
+    font-size: 5rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.date {
+    margin-top: 8rem;
+}
+
+.reloj {
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.87);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+    height: 50rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    margin-top: 20rem;
+    border-radius: 2rem;
+    font-family: var(--font-princial);
+    font-weight: 400;
+    font-size: 10rem;
+}
+
+.hora, .min, .sec {
+    padding: 2rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+.hora {
+    background-color: var(--azul);
+}
+.min {
+    background-color: var(--naranja);
+}
+.sec {
+    background-color: var(--verde);
+}
+
+
+@media (max-width: 530px) {
+    .reloj {
+        font-size: 4.5rem;
+    }
+    .hora, .min, .sec {
+        padding: 2rem;
+    }
+}
