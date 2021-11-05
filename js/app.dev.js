@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+    getDate();
+});
 const reloj = document.querySelector("#reloj");
 
 const getDate = () => {
