@@ -1,5 +1,5 @@
 :root {
-    --font-princial: font-family: 'Bebas Neue', cursive;
+    --font-principal: font-family: 'Bebas Neue', cursive;
     --azul: #3374FF;
     --naranja: #e07b39;
     --verde: #75FF33;
@@ -36,16 +36,18 @@ h1 {
 
 .reloj {
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.87);
+    background: rgba(240, 248, 255, 0.87);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
     height: 50rem;
     max-width: 65rem;
     margin: 0 auto;
     margin-top: 20rem;
     border-radius: 2rem;
-    font-family: var(--font-princial);
+    font-family: var(--font-principal);
     font-weight: 400;
     font-size: 10rem;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .hora, .min, .sec {
@@ -62,7 +64,6 @@ h1 {
 .sec {
     background-color: var(--verde);
 }
-
 
 @media (max-width: 530px) {
     .reloj {

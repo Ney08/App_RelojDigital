@@ -10,7 +10,7 @@ const getDate = () => {
         min: date.getMinutes(),
         sec: date.getSeconds()
     }
-
+    reloj.classList.add("animated", "fadeIn");
     validarHora(time);
 };
 
