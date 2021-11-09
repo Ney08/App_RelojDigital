@@ -46,8 +46,6 @@ h1 {
     font-family: var(--font-principal);
     font-weight: 400;
     font-size: 10rem;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .hora, .min, .sec {
