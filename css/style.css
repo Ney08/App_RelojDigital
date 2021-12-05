@@ -29,14 +29,17 @@ h1 {
     margin: 0 auto;
 }
 
-
-.date {
-    margin-top: 8rem;
+.title {
+    padding: 2rem;
 }
+.date {
+    margin: 0 auto;
+}
+
 
 .reloj {
     text-align: center;
-    background: rgba(240, 248, 255, 0.87);
+    background: rgba(240, 248, 255, 0.829);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
     height: 50rem;
     max-width: 65rem;
@@ -46,6 +49,8 @@ h1 {
     font-family: var(--font-principal);
     font-weight: 400;
     font-size: 10rem;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .hora, .min, .sec {
@@ -66,8 +71,9 @@ h1 {
 @media (max-width: 530px) {
     .reloj {
         font-size: 4.5rem;
+        height: 30rem;
     }
-    .hora, .min, .sec {
-        padding: 2rem;
+    .title {
+        padding: 0;
     }
 }
